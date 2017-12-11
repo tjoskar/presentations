@@ -1,0 +1,21 @@
+{
+  "name": "presentations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ramda": "github:types/npm-ramda#dist",
+    "fuse-box": "^2.5.0-beta.1",
+    "monet": "^0.8.10",
+    "ramda": "^0.25.0",
+    "ramda-fantasy": "^0.8.0",
+    "rxjs": "^5.5.2",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1"
+  }
+}
