@@ -5,6 +5,7 @@ A 3 part series:
 - Part 1: Basic concept: Pure function, shared state, mutable data, side-effects, map, filter, reduce etc.
 - Part 2: Reactive programing (with RxJs)
 - Part 3: Monad, Pipe, Compose
+
 Workshop: https://github.com/tjoskar/react-fp-workshop
 
 The presentations are in Swedish, but the code examples are in English
