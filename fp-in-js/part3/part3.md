@@ -446,6 +446,10 @@ parseJSON(someJson)
   .flatMap(data => data.name ? Right(data.name) : Left(new Error('No name')))
   .flatMap(name => name.first ? Right(name.first) : Left(new Error('No first name')))
   .map(firstName => firstName.toUpperCase())
+  .cata(
+    error => console.error(error),
+    name => console.log(name)
+  )
 ```
 
 ---
