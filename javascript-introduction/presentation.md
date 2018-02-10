@@ -15,7 +15,7 @@ build-lists: true
 # Räck upp en hand om:
 
 - du har hört talas om javascript förut
-- du har skrivit javascript minst en rad javascript
+- du har skrivit minst en rad javascript
 - du anser att du kan javascript relativt bra
 
 ---
@@ -59,10 +59,11 @@ const one = 1
 one.hello = 'World'
 
 one.hello // 'World'
-// Is there an 'hello' own property on one? Yes, and its value is 'World'.
+// Is there an 'hello' property on `one`? Yes, and its value is 'World'.
 
 one.toString() // '1'
-// Is there an 'toString' own property on one? Yes, it's a function and its return value is '1'.
+// Is there an 'toString' property on `one`? Noop! Check its property!
+// Is there an 'toString' property on `one.property`? Yes! It's a function and its return value is '1'.
 ```
 
 ---
@@ -170,10 +171,16 @@ console.log(area(1))
 
 ---
 
-
 ---
 
 # Varför jag älskar JavaScript?
+
+---
+
+# Kan skapa allt i javascript
+
+Atwood's Law: 
+> Any application that can be written in JavaScript, will eventually be written in JavaScript
 
 ---
 
@@ -265,6 +272,14 @@ add(1, '2') // Error: argument of type '2' is assignable to parameter of type 'n
 
 ---
 
+> Jag har en fråga!
+
+---
+
+> Ska man använda semicolon?
+
+---
+
 > Jag finns på Slack
 – Oskar Karlsson
 
@@ -278,4 +293,8 @@ add(1, '2') // Error: argument of type '2' is assignable to parameter of type 'n
 ---
 
 https://www.destroyallsoftware.com/talks/wat
+
+---
+
+![fit](https://i.imgur.com/iXYjbsW.png)
 
