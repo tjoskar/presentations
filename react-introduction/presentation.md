@@ -175,7 +175,7 @@ class MyButton extends React.Component {
 
 ---
 
-# React - Component Lifecycle
+# React - Component Lifecycle [^1]
 
 ```js
 import React from 'react'
@@ -198,7 +198,7 @@ class MyButton extends React.Component {
 
 }
 ```
-#### https://reactjs.org/docs/react-component.html#the-component-lifecycle
+[^1]: https://reactjs.org/docs/react-component.html#the-component-lifecycle
 
 ---
 
