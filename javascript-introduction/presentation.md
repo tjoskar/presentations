@@ -1,6 +1,6 @@
 build-lists: true
 
-# JavaScript 
+# JavaScript
 
 ---
 
@@ -17,18 +17,6 @@ build-lists: true
 - du har hört talas om javascript förut
 - du har skrivit minst en rad javascript
 - du anser att du kan javascript relativt bra
-
----
-
-# Vem är jag?
-
----
-
-# Oskar Karlsson
-
----
-
-# Utvecklare på Valtech, de senaste 3,5 åren
 
 ---
 
@@ -71,9 +59,9 @@ one.toString() // '1'
 ```js
 const one = 1
 
-one.toString()
+one.toString() // '1'
 
-Number.prototype.toString.call(one)
+Number.prototype.toString.call(one) // '1'
 ```
 
 ---
@@ -155,11 +143,9 @@ function hello() {
 
 ```js
 // circle.js
-function area(r) {
+export function area(r) {
   return Math.PI * r ** 2
 }
-
-export { area }
 ```
 
 ```js
@@ -179,7 +165,8 @@ console.log(area(1))
 
 # Kan skapa allt i javascript
 
-Atwood's Law: 
+Atwood's Law:
+
 > Any application that can be written in JavaScript, will eventually be written in JavaScript
 
 ---
@@ -190,8 +177,8 @@ Atwood's Law:
 - web - backend kod (uber, paypal, LinkedIn, netflix, medium)
 - mobil appar (mesenger, instagram, Airbnb)
 - detsktop appar (slack, atom, vs code, brave)
-- tv appar (apple tv*, lg, samsung)
-- cli (många*)
+- tv appar (apple tv\*, lg, samsung)
+- cli (många\*)
 - IoT (Kylskåp, Bilar, Mikrovågsugnar)
 - Operativsystem (nodeos, jsos)
 
@@ -202,6 +189,7 @@ Atwood's Law:
 ---
 
 > There's an npm module for that
+
 - Steve Jobs
 
 ---
@@ -236,7 +224,7 @@ const result = add(a, b)
 # Transpilers
 
 - Babel
-- Typescript 
+- Typescript
 
 ---
 
@@ -249,11 +237,11 @@ const result = add(a, b)
 // konverteras med babel/typescript till:
 
 var add = function add(a, b) {
-  return a + b;
-};
-var a = 1;
-var b = 2;
-var result = add(a, b);
+  return a + b
+}
+var a = 1
+var b = 2
+var result = add(a, b)
 ```
 
 ---
@@ -280,11 +268,6 @@ add(1, '2') // Error: argument of type '2' is assignable to parameter of type 'n
 
 ---
 
-> Jag finns på Slack
-– Oskar Karlsson
-
----
-
 ```js
 [] + [] // ?
 [] + {} // ?
@@ -297,4 +280,3 @@ https://www.destroyallsoftware.com/talks/wat
 ---
 
 ![fit](https://i.imgur.com/iXYjbsW.png)
-
