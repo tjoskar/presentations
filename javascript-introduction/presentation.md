@@ -121,6 +121,8 @@ myDate.getTime() // 1000000000000
 
 ---
 
+## Demo
+
 ```js
 function hello() {
   return 'world'
@@ -156,6 +158,26 @@ console.log(area(1))
 ```
 
 ---
+
+# This
+
+```js
+class Animal {
+  constructor(name) {
+    this.name = name
+  }
+
+  getName() {
+    return this.name
+  }
+
+  sayHi() {
+    return 'Hi!'
+  }
+}
+
+const animal = new Animal('Måns')
+```
 
 ---
 
