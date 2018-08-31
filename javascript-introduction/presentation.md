@@ -159,6 +159,10 @@ console.log(area(1))
 
 ---
 
+# Demo
+
+---
+
 # This
 
 ```js
@@ -178,6 +182,10 @@ class Animal {
 
 const animal = new Animal('Måns')
 ```
+
+---
+
+# Demo
 
 ---
 
