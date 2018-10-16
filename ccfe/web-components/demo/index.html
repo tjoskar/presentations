@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My awesome site!</title>
+  <style>
+    .image-warpper {
+      position: relative;
+    }
+    .movie-poster {
+      width: 200px;
+    }
+    .movie-poster:hover {
+      filter: hue-rotate(180deg);
+    }
+    .title {
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      background: rgba(0, 0, 0, .8);
+      padding: 16px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-warpper">
+    <img class="movie-poster" src="https://bit.ly/2NJfrte">
+    <a class="title" href="http://www.imdb.com/title/tt0468569/">The Dark Knight</a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <movie-poster title="The Dark Knight" img="https://bit.ly/2NJfrte" imdbId="tt0468569"></movie-poster> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    class MoviePosterComponent extends HTMLElement {
+      constructor() {
+        super();
+        this.innerHTML = `
+          <div class="image-warpper">
+            <img class="movie-poster" src="${this.getAttribute('img')}">
+            <a class="title" href="http://www.imdb.com/title/${this.getAttribute('imdbId')}/">${this.getAttribute('title')}</a>
+          </div>
+        `
+      }
+    }
+    
+    // customElements.define('movie-poster', MoviePosterComponent);
+  </script>
+
+  <!-- <script src="./script.js" type="module"></script> -->
+
+
+</body>
+</html>
