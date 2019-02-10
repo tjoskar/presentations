@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Server</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <style>
+    .bg-image {
+      background-image: url('https://images.unsplash.com/photo-1549526809-d207fdd074e5?ixlib=rb-1.2.1&auto=format');
+      height: 500px;
+      background-size: cover;
+      background-position-y: center;
+    }
+    label {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <div id="my-app">
+    <ul>
+      <li><input type="checkbox" id="1" name="complete" checked><label for="1"> Buy milk</label></li>
+      <li><input type="checkbox" id="2" name="complete"><label for="2"> Buy a cat</label></li>
+      <li><input type="checkbox" id="3" name="complete"><label for="3"> Buy a dog</label></li>
+    </ul>
+    <form>
+      <input type="text" name="new-task" />
+      <button type="submit" name="save" value="true">Save</button>
+    </form>
+  </div>
+
+  <!-- <script src="./script.js"></script> -->
+  <script src="./react.js"></script>
+</body>
+</html>

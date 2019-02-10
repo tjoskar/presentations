@@ -1,3 +1,31 @@
+# 
+
+---
+
+# Oskar Karlsson
+
+--- 
+
+# React
+
+---
+
+# Hur gjorde man förr? 🤔
+
+---
+
+# Server rendering
+
+---
+
+# Ajax
+
+---
+
+# SPA
+
+---
+
 # React
 
 ---
