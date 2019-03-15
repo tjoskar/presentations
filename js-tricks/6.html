@@ -1,0 +1,15 @@
+<input type="text" value="2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+<button>Print numbers</button>
+
+<script>
+  function printNumbers(arrStr) {
+    const arr = arrStr
+      .split(',')
+      .map(p => p.trim())
+      .map(Number);
+    console.log(arr);
+  }
+  document.querySelector('button').addEventListener('click', () => {
+    printNumbers(document.querySelector('input').value);
+  });
+</script>

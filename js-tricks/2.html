@@ -1,0 +1,46 @@
+<button onclick="alert(JSON.stringify(person))">Alert person</button>
+
+<script>
+  const person = {
+    address: {
+    },
+    name: 'Oskar'
+  };
+  
+  Object.defineProperty(person.address, 'street', {
+    get() {
+      return 'Kungsgatan'
+    },
+    set() {
+      console.trace();
+    }
+  });
+
+  console.log('person.name: ', person.name);
+  console.log('person.address.street: ', person.address.street);
+  console.log('person: ', person);
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  person.name = 'Hans';
+  person.address.street = 'Månvägen';
+</script>

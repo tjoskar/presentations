@@ -1,0 +1,43 @@
+<button>Call a</button>
+
+<script>
+  const myObj = {
+    a() {
+      console.log('aaaaa');
+    }
+  };
+
+  // Object.defineProperty(myObj, 'a', {
+  //   get() {
+  //     return () => console.log('aaaa');
+  //   },
+  //   set() {
+  //     console.log(new Error().stack);
+  //   }
+  // })
+
+  function callA() {
+    myObj.a();
+  }
+
+  document.querySelector('button').addEventListener('click', callA);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  myObj.a = () => console.log('bbb');
+</script>

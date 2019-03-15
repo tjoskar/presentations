@@ -1,0 +1,18 @@
+<input type="text">
+<button>Reverse</button>
+
+<p></p>
+
+<script>
+  function myReverse(arrStr) {
+    const arr = arrStr.split(',').map(p => p.trim());
+    const newArr = Array.of(arr.length);
+    for (let i in arr) {
+      newArr[arr.length - i] = arr[i];
+    }
+    return newArr;
+  }
+  document.querySelector('button').addEventListener('click', () => {
+    document.querySelector('p').innerText = myReverse(document.querySelector('input').value);
+  });
+</script>
